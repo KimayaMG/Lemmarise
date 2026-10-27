@@ -269,16 +269,35 @@
         h("span", null)
       ),
       content,
+
       h(
         "footer",
         { className: "footer" },
-        "Hope this helps! Coded with care, by Kimaya. \n Feel free to reach out if you encounter any issues or have feedback. \n You can find me here: ",
         h(
-          "a",
-          { href: "https://kimayamg.github.io/portfolio/", target: "_blank", rel: "noopener noreferrer" },
-          "kimayamg.github.io/portfolio"
+          "div",
+          { className: "topic-label" },
+          "Hope this helps. Happy Calculating!"
+        ),
+        h(
+          "div",
+          null,
+          "Coded with care, by Kimaya.",
+          h("br"),
+          "Feel free to reach out if you encounter any issues or have feedback.",
+          h("br"),
+          "You can find me here: ",
+          h(
+            "a",
+            {
+              href: "https://kimayamg.github.io/portfolio/",
+              target: "_blank",
+              rel: "noopener noreferrer"
+            },
+            "kimayamg.github.io/portfolio"
+          )
         )
       )
+
     );
   }
 

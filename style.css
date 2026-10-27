@@ -234,8 +234,7 @@ body {
 .bubble:focus-visible,
 .next:focus-visible,
 .link:focus-visible,
-.topic:focus-visible,
-.footer a:focus-visible {
+.topic:focus-visible {
   outline: 3px solid currentColor;
   outline-offset: 3px;
 }
@@ -349,19 +348,47 @@ body {
   opacity: 0.8;
 }
 
+/* Footer */
+
+
+
 .footer {
   text-align: center;
-  font-size: 0.95rem;
-  padding-top: 12px;
-  opacity: 0.9;
-  white-space: pre-line;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  padding: 20px 16px;
+  margin-top: 24px;
+  opacity: 0.8;
   font-family: "Chakra Petch", sans-serif;
+  color: var(--q-text);
+  background: var(--q-bubble);
+  border: 1px solid var(--q-border);
+  border-radius: 16px;
+  white-space: pre-line;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .footer a {
-  color: inherit;
+  color: var(--q-text);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--q-border);
   text-underline-offset: 3px;
+  transition: background 0.2s ease, text-decoration-color 0.2s ease;
 }
+
+.footer a:hover {
+  background: var(--q-hover);
+  text-decoration-color: var(--q-text);
+}
+
+.footer a:focus-visible {
+  outline: 2px solid var(--q-text);
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+
 
 @media (max-width: 420px) {
   .options {
